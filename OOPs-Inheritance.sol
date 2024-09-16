@@ -55,5 +55,6 @@ contract GreeterUser {
     // Function to get the greeting from the IGreeter contract
     function getGreeting() external view returns (string memory) {
         return str.greet();
+        // return IGreeter(_greeter).greet();
     }
 }
